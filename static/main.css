@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-height: 100vh;
+  max-width: 100vw;
+  padding: 0;
+}
+
+.nome {
+  margin-left: 4.6rem;
+  top: 110px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*font-family: Roboto;
+    font-style: normal;
+    width: 1061.43px;
+    height: 488.15px;
+    font-weight: bold;*/
+  font-size: 155px;
+  line-height: 70px;
+  letter-spacing: -0.13em;
+}
+
+.conrado {
+  letter-spacing: -0.177em;
+}
+
+.sub {
+  margin-left: 9.5rem;
+  top: 240px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sub h3 {
+  margin-top: 4.5rem;
+  margin-bottom: 1rem;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.home {
+  min-height: 100vh;
+}
+
+.second {
+  background-color: #8ce9f0;
+  width: calc(100% - 9.5rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin-left: 9.5rem;
+  top: 0;
+  opacity: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 9.33rem;
+}
+
+.second h1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 137px;
+  letter-spacing: initial;
+  margin-top: 0;
+}
+
+.conqs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 2em;
+}
+
+.third {
+  height: 100vh;
+  background-color: #eef08c;
+  position: absolute;
+  margin-left: 19rem;
+  padding: 4rem 9.7rem;
+  width: 56.8rem;
+  top: 0;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  letter-spacing: 0.5em;
+  font-weight: lighter;
+}
+
+.third h1 {
+  margin-top: 0;
+  font-size: 58px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1em;
+  letter-spacing: 0.35em;
+}
+
+.third h2 {
+  font-size: 28px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+}
+
+.third ul {
+  margin: 0.5em 0;
+  margin-left: 2em;
+  font-weight: lighter;
+  list-style-position: inside;
+}
+
+.third .habs {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.third .tudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.third .caixa {
+  margin: 0.5em 0;
+}
+
+.item {
+  background-color: #b9b9b9;
+  width: 13.5em;
+  margin-bottom: 1em;
+  padding: 2em;
+  height: 18em;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  list-style-position: inside;
+}
+
+.item h2 {
+  font-size: 1.3em;
+}
+
+.fourth {
+  width: 37.85rem;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #f08ce8;
+  margin-left: 28.5rem;
+  opacity: 0;
+  letter-spacing: 0.2em;
+  padding: 4.5em 4.5em 4.5em 9.55em;
+  text-align: right;
+}
+
+.fourth h1 {
+  font-size: 61px;
+  text-align: right;
+}
+
+.fourth h3 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.fifth {
+  width: 28.4rem;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #8cf0be;
+  margin-left: 37.95rem;
+  opacity: 0;
+}
+
+.m {
+  margin: 0.5em 0;
+  margin-left: 9.5rem;
+  position: absolute;
+  z-index: 2;
+  font-size: 2em;
+  color: #8ce9f0;
+}
+
+.m:hover {
+  font-size: 2.2em;
+  cursor: pointer;
+}
+
+.mm {
+  top: 0.5em;
+  position: absolute;
+  z-index: 2;
+  font-size: 2em;
+  color: #eef08c;
+  opacity: 0;
+  margin-left: 19rem;
+}
+
+.mm:hover {
+  font-size: 2.2em;
+  cursor: pointer;
+}
+
+.mmm {
+  position: absolute;
+  top: 0.5em;
+  z-index: 2;
+  font-size: 2em;
+  color: #f08ce8;
+  opacity: 0;
+  margin-left: 28.5rem;
+}
+
+.mmm:hover {
+  font-size: 2.2em;
+  cursor: pointer;
+}
+
+.mmmm {
+  position: absolute;
+  top: 0.5em;
+  /*margin-left: 4.7em;*/
+  margin-left: 40rem;
+  z-index: 2;
+  font-size: 2em;
+  color: #8cf0be;
+  opacity: 0;
+}
+
+.mmmm:hover {
+  font-size: 2.2em;
+  cursor: pointer;
+}
+
+.v {
+  margin-left: 49rem;
+  color: black;
+}
+
+.show {
+  opacity: 1;
+}
+
+nav h2 {
+  font-weight: lighter;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*# sourceMappingURL=main.css.map */
