@@ -68,12 +68,13 @@
   position: absolute;
   margin-left: 9.5rem;
   top: 0;
-  opacity: 0;
+  visibility: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 9.33rem;
+  height: 100vh;
 }
 
 .second h1 {
@@ -103,7 +104,7 @@
   margin-left: 19rem;
   padding: 5rem 9.7rem;
   top: 0;
-  opacity: 0;
+  visibility: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,10 +209,11 @@
           align-items: flex-end;
   background-color: #f08ce8;
   margin-left: 28.5rem;
-  opacity: 0;
+  visibility: hidden;
   letter-spacing: 0.2em;
   padding: 4.5em 4.5em 4.5em 9.55em;
   text-align: right;
+  height: 100vh;
 }
 
 .fourth h1 {
@@ -243,7 +245,8 @@
           justify-content: center;
   background-color: #8cf0be;
   margin-left: 37.95rem;
-  opacity: 0;
+  visibility: hidden;
+  height: 100vh;
 }
 
 .m {
@@ -251,6 +254,7 @@
   position: absolute;
   z-index: 2;
   color: #8ce9f0;
+  visibility: hidden;
 }
 
 .m:hover {
@@ -262,7 +266,7 @@
   position: absolute;
   z-index: 2;
   color: #eef08c;
-  opacity: 0;
+  visibility: hidden;
   margin-left: 19rem;
 }
 
@@ -275,7 +279,7 @@
   position: absolute;
   z-index: 2;
   color: #f08ce8;
-  opacity: 0;
+  visibility: hidden;
   margin-left: 28.5rem;
 }
 
@@ -290,7 +294,7 @@
   margin-left: 40rem;
   z-index: 2;
   color: #8cf0be;
-  opacity: 0;
+  visibility: hidden;
 }
 
 .mmmm:hover {
@@ -304,7 +308,7 @@
 }
 
 .show {
-  opacity: 1;
+  visibility: visible;
 }
 
 .navCor {
@@ -329,11 +333,22 @@ nav h2 {
   top: 0.355em;
 }
 
+.burguerDesk {
+  margin-left: 1rem;
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 600px) {
+  .home {
+    width: 100vw;
+  }
+  /*nav{
+        height: 14.2rem;
+        background: linear-gradient(180deg, white 20%, $secondColor 30%, $thirdColor 55%, $fourthColor 77%, $fifthColor 90%)
+    }*/
   .nome {
     margin-left: calc(4.6rem * 0.1);
-    top: calc(110px * 1.5);
+    top: 1em;
     font-size: calc(155px * 0.8);
     line-height: calc(70px * 0.76);
     letter-spacing: calc(-0.13em * 1.1);
@@ -342,34 +357,33 @@ nav h2 {
     letter-spacing: calc(-0.177em * 1.1);
   }
   .sub {
-    margin-left: calc(9.5rem * 0.1);
-    top: calc(240px * 1.5);
+    margin-left: calc(9.5rem * 0.15);
+    top: 10em;
   }
   .sub h3 {
-    margin-top: calc(4.5rem * 0.9);
-    margin-bottom: calc(1rem * 1.24);
+    margin-top: 8.5em;
+    margin-bottom: 0.5em;
     font-weight: 300;
-    font-size: calc(1.25em);
+    font-size: 0.85em;
   }
   .sub h4 {
     font-weight: 100;
-    font-size: calc(1rem);
+    font-size: 0.8em;
   }
   .second {
-    width: 26.5rem;
-    margin-top: 3.8em;
+    width: 100vw;
+    margin-top: 3em;
     margin-left: 0;
     padding: calc(9.33rem * 0.15);
-    opacity: 1;
-    height: 55rem;
+    height: calc(100vh - 3em);
     overflow: hidden;
   }
   .second h1 {
-    font-size: 3.6em;
+    font-size: 2.65em;
     margin-top: 0.69em;
   }
   .conqs {
-    margin: 1.5em 0;
+    margin: 0.3em 0;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -378,54 +392,52 @@ nav h2 {
             align-items: flex-start;
   }
   .item {
-    width: 13.4em;
+    width: 10em;
     margin-bottom: calc(1em * 0.73);
     padding: calc(2em * 0.4);
-    height: 13.4em;
-    font-size: calc(1.3em * 0.65);
+    height: 12.5em;
+    font-size: 0.75rem;
   }
   .third {
-    height: 45rem;
+    height: calc(100vh - 6rem);
     margin-left: 0;
-    padding: 3.2rem 0;
-    margin-top: 7.6em;
-    opacity: 1;
+    padding: 3rem 0;
+    margin-top: 6em;
     letter-spacing: 0.3em;
-    width: 26.5em;
+    width: 100vw;
   }
   .third h1 {
-    font-size: 37px;
+    font-size: 30px;
     font-weight: bold;
-    letter-spacing: 0.35em;
+    letter-spacing: 0.28em;
   }
   .third h2 {
-    font-size: 33px;
+    font-size: 30px;
     font-weight: 400;
     letter-spacing: 0;
   }
   .third ul {
     margin: 0 0;
     font-weight: 300;
-    line-height: 1.65em;
-    font-size: 1.1em;
+    line-height: 1.5em;
+    font-size: 1em;
   }
   .third .habs {
-    margin-top: 0;
+    margin-top: -0.3em;
   }
   .third .caixa {
     margin: 0.5em 0.75em;
   }
   .third .tudo {
-    margin-left: 1.5em;
+    margin-left: 0.4em;
   }
   .fourth {
-    width: 26.5em;
-    height: 37em;
+    width: 100vw;
+    height: calc(100vh - 9rem);
     margin-left: 0;
-    margin-top: 11.4em;
-    opacity: 1;
+    margin-top: 9em;
     letter-spacing: 0.2em;
-    padding: 1.9em 1em 4em 2em;
+    padding: 1.9em 1em 3em 2em;
   }
   .fourth h1 {
     font-size: 40px;
@@ -435,34 +447,34 @@ nav h2 {
     letter-spacing: 0.15em;
   }
   .fifth {
-    width: 26.5rem;
-    height: 58em;
+    width: 100vw;
+    height: calc(100vh - 12rem);
     margin-left: 0;
-    margin-top: 30.7em;
-    opacity: 1;
+    margin-top: 12rem;
     font-size: 0.5em;
   }
   .navCor h2 {
     margin-left: 0.7em;
+    font-size: 1.3em;
   }
   .navCor h2:hover {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .mm {
-    margin-top: 2.3em;
+    margin-top: 3.1rem;
   }
   .mmm {
-    margin-top: 4.2em;
+    margin-top: 6.1rem;
   }
   .mmmm {
-    margin-top: 4.5em;
-  }
-  .mmmm {
-    margin-top: 6.3em;
+    margin-top: 9.1rem;
   }
   .v {
-    margin-top: 8em;
+    margin-top: 12.1rem;
     color: black;
+  }
+  .burguer {
+    margin-top: 0.3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
