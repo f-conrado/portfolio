@@ -7,12 +7,22 @@ var como = document.getElementById("mm")
 var quando = document.getElementById("mmm")
 var onde = document.getElementById("mmmm")
 var eh = document.getElementById("v")
+var nav = document.getElementById("nav")
 
-function remover() {
+function classRemover(){
     sec.classList.remove("show")
     third.classList.remove("show")
     fourth.classList.remove("show")
     fifth.classList.remove("show")
+}
+
+function remover() {
+    quem.classList.remove("show")
+    como.classList.remove("show")
+    quando.classList.remove("show")
+    onde.classList.remove("show")
+    eh.classList.add("burguerDesk", "burguer")
+    console.log(quem.classList)
 }
 
 function showS() {
@@ -20,6 +30,11 @@ function showS() {
         third.classList.remove("show")
         fourth.classList.remove("show")
         fifth.classList.remove("show")
+        sec.classList.add("show")
+    }
+    else if(sec.classList == "second x"){
+        remover()
+        sec.classList.add("show")
     }
     else{
         sec.classList.add("show")
@@ -28,34 +43,49 @@ function showS() {
 }
 
 function showT() {
-    var hidden = document.getElementById("third")
-    if(hidden.classList == "third show"){
+    if(third.classList == "third show"){
         fourth.classList.remove("show")
         fifth.classList.remove("show")
     }
+    else if(third.classList == "third x"){
+        remover()
+        sec.classList.add("show")
+        third.classList.add("show")
+    }
     else{
-        hidden.classList.add("show")
+        third.classList.add("show")
         quando.classList.add("show")
     }
 }
 
 function showF() {
-    var hidden = document.getElementById("fourth")
-    if(hidden.classList == "fourth show"){
+    if(fourth.classList == "fourth show"){
         fifth.classList.remove("show")
     }
+    else if(fourth.classList == "fourth x"){
+        remover()
+        sec.classList.add("show")
+        third.classList.add("show")
+        fourth.classList.add("show")
+    }
     else{
-        hidden.classList.add("show")
+        fourth.classList.add("show")
         onde.classList.add("show")
     }
 }
 
 function showFi() {
-    var hidden = document.getElementById("fifth")
-    if(hidden.classList == "fifth show"){
+    if(fifth.classList == "fifth show"){
+    }
+    else if(fifth.classList == "fifth x"){
+        remover()
+        sec.classList.add("show")
+        third.classList.add("show")
+        fourth.classList.add("show")
+        fifth.classList.add("show")
     }
     else{
-        hidden.classList.add("show")
+        fifth.classList.add("show")
         eh.classList.add("show")
     }
 }
@@ -63,13 +93,20 @@ function showFi() {
 function showH() {
     var hidden = document.getElementById("fifth")
     if(hidden.classList == "fifth show"){
-        sec.classList.remove("show")
-        third.classList.remove("show")
-        fourth.classList.remove("show")
-        fifth.classList.remove("show")
+        classRemover()
+        
+        sec.classList.add("x")
+        third.classList.add("x")
+        fourth.classList.add("x")
+        fifth.classList.add("x")
     }
     else{
-        hidden.classList.add("show")
+        classRemover()
+        quem.classList.add("show")
+        como.classList.add("show")
+        quando.classList.add("show")
+        onde.classList.add("show")
+        eh.classList.remove("burguer", "burguerDesk")
     }
 }
 
