@@ -2,8 +2,8 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-height: 100vh;
-  max-width: 100vw;
+  /*max-height: 100vh;
+    max-width: 100vw;*/
   padding: 0;
 }
 
@@ -43,17 +43,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: 'Roboto', sans-serif;
 }
 
 .sub h3 {
   margin-top: 4.5rem;
   margin-bottom: 1rem;
-  font-family: sans-serif;
-  font-weight: normal;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.25em;
 }
 
-.home {
-  min-height: 100vh;
+.sub h4 {
+  font-weight: 100;
+  font-size: 1rem;
 }
 
 .second {
@@ -98,40 +101,37 @@
   background-color: #eef08c;
   position: absolute;
   margin-left: 19rem;
-  padding: 4rem 9.7rem;
-  width: 56.8rem;
+  padding: 5rem 9.7rem;
   top: 0;
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
   letter-spacing: 0.5em;
   font-weight: lighter;
+  overflow: hidden;
 }
 
 .third h1 {
-  margin-top: 0;
   font-size: 58px;
-  font-weight: 400;
-  text-align: left;
-  line-height: 1em;
+  font-weight: 600;
   letter-spacing: 0.35em;
+  font-family: "Lora";
 }
 
 .third h2 {
-  font-size: 28px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 300;
+  font-size: 48px;
+  font-family: "Dancing Script";
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 .third ul {
-  margin: 0.5em 0;
-  margin-left: 2em;
-  font-weight: lighter;
-  list-style-position: inside;
+  margin: 0 0.5em;
+  font-weight: 300;
+  list-style: none;
+  line-height: 2em;
+  font-size: 1.25em;
 }
 
 .third .habs {
@@ -139,10 +139,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.third .costas {
   text-align: right;
 }
 
@@ -154,16 +160,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .third .caixa {
-  margin: 0.5em 0;
+  margin: 0.5em 0.75em;
 }
 
 .item {
@@ -195,7 +198,6 @@
 
 .fourth {
   width: 37.85rem;
-  min-height: 100vh;
   position: absolute;
   top: 0;
   display: -webkit-box;
@@ -224,7 +226,6 @@
 
 .fifth {
   width: 28.4rem;
-  min-height: 100vh;
   position: absolute;
   top: 0;
   display: -webkit-box;
@@ -246,62 +247,54 @@
 }
 
 .m {
-  margin: 0.5em 0;
   margin-left: 9.5rem;
   position: absolute;
   z-index: 2;
-  font-size: 2em;
   color: #8ce9f0;
 }
 
 .m:hover {
-  font-size: 2.2em;
+  font-size: 1.75em;
   cursor: pointer;
 }
 
 .mm {
-  top: 0.5em;
   position: absolute;
   z-index: 2;
-  font-size: 2em;
   color: #eef08c;
   opacity: 0;
   margin-left: 19rem;
 }
 
 .mm:hover {
-  font-size: 2.2em;
+  font-size: 1.75em;
   cursor: pointer;
 }
 
 .mmm {
   position: absolute;
-  top: 0.5em;
   z-index: 2;
-  font-size: 2em;
   color: #f08ce8;
   opacity: 0;
   margin-left: 28.5rem;
 }
 
 .mmm:hover {
-  font-size: 2.2em;
+  font-size: 1.75em;
   cursor: pointer;
 }
 
 .mmmm {
   position: absolute;
-  top: 0.5em;
   /*margin-left: 4.7em;*/
   margin-left: 40rem;
   z-index: 2;
-  font-size: 2em;
   color: #8cf0be;
   opacity: 0;
 }
 
 .mmmm:hover {
-  font-size: 2.2em;
+  font-size: 1.75em;
   cursor: pointer;
 }
 
@@ -314,8 +307,162 @@
   opacity: 1;
 }
 
+.navCor {
+  background-color: white;
+}
+
+nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 3em;
+}
+
 nav h2 {
   font-weight: lighter;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  top: 0.355em;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 600px) {
+  .nome {
+    margin-left: calc(4.6rem * 0.1);
+    top: calc(110px * 1.5);
+    font-size: calc(155px * 0.8);
+    line-height: calc(70px * 0.76);
+    letter-spacing: calc(-0.13em * 1.1);
+  }
+  .conrado {
+    letter-spacing: calc(-0.177em * 1.1);
+  }
+  .sub {
+    margin-left: calc(9.5rem * 0.1);
+    top: calc(240px * 1.5);
+  }
+  .sub h3 {
+    margin-top: calc(4.5rem * 0.9);
+    margin-bottom: calc(1rem * 1.24);
+    font-weight: 300;
+    font-size: calc(1.25em);
+  }
+  .sub h4 {
+    font-weight: 100;
+    font-size: calc(1rem);
+  }
+  .second {
+    width: 26.5rem;
+    margin-top: 3.8em;
+    margin-left: 0;
+    padding: calc(9.33rem * 0.15);
+    opacity: 1;
+    height: 55rem;
+    overflow: hidden;
+  }
+  .second h1 {
+    font-size: 3.6em;
+    margin-top: 0.69em;
+  }
+  .conqs {
+    margin: 1.5em 0;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .item {
+    width: 13.4em;
+    margin-bottom: calc(1em * 0.73);
+    padding: calc(2em * 0.4);
+    height: 13.4em;
+    font-size: calc(1.3em * 0.65);
+  }
+  .third {
+    height: 45rem;
+    margin-left: 0;
+    padding: 3.2rem 0;
+    margin-top: 7.6em;
+    opacity: 1;
+    letter-spacing: 0.3em;
+    width: 26.5em;
+  }
+  .third h1 {
+    font-size: 37px;
+    font-weight: bold;
+    letter-spacing: 0.35em;
+  }
+  .third h2 {
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  .third ul {
+    margin: 0 0;
+    font-weight: 300;
+    line-height: 1.65em;
+    font-size: 1.1em;
+  }
+  .third .habs {
+    margin-top: 0;
+  }
+  .third .caixa {
+    margin: 0.5em 0.75em;
+  }
+  .third .tudo {
+    margin-left: 1.5em;
+  }
+  .fourth {
+    width: 26.5em;
+    height: 37em;
+    margin-left: 0;
+    margin-top: 11.4em;
+    opacity: 1;
+    letter-spacing: 0.2em;
+    padding: 1.9em 1em 4em 2em;
+  }
+  .fourth h1 {
+    font-size: 40px;
+  }
+  .fourth h3 {
+    font-size: 16px;
+    letter-spacing: 0.15em;
+  }
+  .fifth {
+    width: 26.5rem;
+    height: 58em;
+    margin-left: 0;
+    margin-top: 30.7em;
+    opacity: 1;
+    font-size: 0.5em;
+  }
+  .navCor h2 {
+    margin-left: 0.7em;
+  }
+  .navCor h2:hover {
+    font-size: 1.5em;
+  }
+  .mm {
+    margin-top: 2.3em;
+  }
+  .mmm {
+    margin-top: 4.2em;
+  }
+  .mmmm {
+    margin-top: 4.5em;
+  }
+  .mmmm {
+    margin-top: 6.3em;
+  }
+  .v {
+    margin-top: 8em;
+    color: black;
+  }
 }
 /*# sourceMappingURL=main.css.map */
