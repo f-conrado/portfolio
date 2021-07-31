@@ -176,7 +176,7 @@ body {
 }
 
 .third .back {
-  margin-left: 2.5em;
+  margin-left: 2em;
 }
 
 .item {
@@ -433,7 +433,7 @@ nav h2 {
     margin-bottom: calc(1em * 0.73);
     padding: 1em;
     height: 12.5em;
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .third {
     height: calc(100vh - 6rem);
@@ -469,7 +469,10 @@ nav h2 {
     margin: 0.5em 0.75em;
   }
   .third .tudo {
-    margin-left: 0.4em;
+    margin-left: 0;
+  }
+  .third .back {
+    margin-left: 1.5em;
   }
   .fourth {
     width: 100vw;
@@ -497,7 +500,7 @@ nav h2 {
   .navCor h2 {
     margin-left: 0.7em;
     font-size: 1.3em;
-    font-weight: 400;
+    font-weight: 200;
   }
   .navCor h2:hover {
     font-size: 1.3em;
