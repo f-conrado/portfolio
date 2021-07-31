@@ -26,17 +26,13 @@ function remover() {
 }
 
 function showS() {
-    if(sec.classList == "second show"){
-        third.classList.remove("show")
-        fourth.classList.remove("show")
-        fifth.classList.remove("show")
-        sec.classList.add("show")
-    }
-    else if(sec.classList == "second x"){
+    if(sec.classList == "second x"){
         remover()
         sec.classList.add("show")
+        eh.classList.add("show")
     }
     else{
+        console.log(sec.classList)
         sec.classList.add("show")
         como.classList.add("show")
     }
@@ -51,6 +47,7 @@ function showT() {
         remover()
         sec.classList.add("show")
         third.classList.add("show")
+        eh.classList.add("show")
     }
     else{
         third.classList.add("show")
@@ -67,6 +64,7 @@ function showF() {
         sec.classList.add("show")
         third.classList.add("show")
         fourth.classList.add("show")
+        eh.classList.add("show")
     }
     else{
         fourth.classList.add("show")
@@ -83,6 +81,7 @@ function showFi() {
         third.classList.add("show")
         fourth.classList.add("show")
         fifth.classList.add("show")
+        eh.classList.add("show")
     }
     else{
         fifth.classList.add("show")
@@ -94,11 +93,11 @@ function showH() {
     var hidden = document.getElementById("fifth")
     if(hidden.classList == "fifth show"){
         classRemover()
-        
         sec.classList.add("x")
         third.classList.add("x")
         fourth.classList.add("x")
         fifth.classList.add("x")
+        eh.classList.remove("show")
     }
     else{
         classRemover()
@@ -106,7 +105,7 @@ function showH() {
         como.classList.add("show")
         quando.classList.add("show")
         onde.classList.add("show")
-        eh.classList.remove("burguer", "burguerDesk")
+        eh.classList.remove("show")
     }
 }
 
