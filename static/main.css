@@ -7,10 +7,26 @@
   padding: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 .nome {
-  margin-left: 4.6rem;
-  top: 110px;
-  position: relative;
+  /*font-family: Roboto;
+    font-style: normal;
+    width: 1061.43px;
+    height: 488.15px;
+    font-weight: bold;*/
+  letter-spacing: -0.13em;
+}
+
+.conrado {
+  letter-spacing: -0.18em;
+}
+
+.title {
+  margin-top: 200px;
+  margin-left: 9.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,24 +34,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /*font-family: Roboto;
-    font-style: normal;
-    width: 1061.43px;
-    height: 488.15px;
-    font-weight: bold;*/
-  font-size: 155px;
+  font-size: 110px;
   line-height: 70px;
-  letter-spacing: -0.13em;
-}
-
-.conrado {
-  letter-spacing: -0.177em;
 }
 
 .sub {
-  margin-left: 9.5rem;
-  top: 240px;
-  position: relative;
+  margin-left: 9.55rem;
+  margin-top: 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +52,6 @@
 }
 
 .sub h3 {
-  margin-top: 4.5rem;
   margin-bottom: 1rem;
   font-weight: 300;
   font-style: italic;
@@ -80,7 +84,7 @@
 .second h1 {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  font-size: 137px;
+  font-size: 131px;
   letter-spacing: initial;
   margin-top: 0;
 }
@@ -102,7 +106,7 @@
   background-color: #eef08c;
   position: absolute;
   margin-left: 19rem;
-  padding: 5rem 9.7rem;
+  padding: 4rem 9.7rem;
   top: 0;
   visibility: hidden;
   display: -webkit-box;
@@ -111,13 +115,14 @@
   letter-spacing: 0.5em;
   font-weight: lighter;
   overflow: hidden;
+  color: #f08ce8;
 }
 
 .third h1 {
   font-size: 58px;
   font-weight: 600;
   letter-spacing: 0.35em;
-  font-family: "Lora";
+  font-family: 'Playfair Display';
 }
 
 .third h2 {
@@ -128,7 +133,7 @@
 }
 
 .third ul {
-  margin: 0 0.5em;
+  margin: 0.5em 1em;
   font-weight: 300;
   list-style: none;
   line-height: 2em;
@@ -136,7 +141,7 @@
 }
 
 .third .habs {
-  margin-top: 0;
+  margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,11 +175,15 @@
   margin: 0.5em 0.75em;
 }
 
+.third .back {
+  margin-left: 2.5em;
+}
+
 .item {
-  background-color: #b9b9b9;
+  background-color: #eef08c;
   width: 13.5em;
   margin-bottom: 1em;
-  padding: 2em;
+  padding: 7em 1.9em 1.9em 1.9em;
   height: 18em;
   text-align: right;
   display: -webkit-box;
@@ -184,17 +193,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: "Roboto";
+  font-weight: lighter;
   list-style-position: inside;
 }
 
 .item h2 {
-  font-size: 1.3em;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 1.5em;
+  font-family: "Dancing Script";
 }
 
 .fourth {
@@ -212,8 +224,10 @@
   visibility: hidden;
   letter-spacing: 0.2em;
   padding: 4.5em 4.5em 4.5em 9.55em;
-  text-align: right;
+  text-align: justify;
   height: 100vh;
+  font-family: 'Playfair Display';
+  color: #eef08c;
 }
 
 .fourth h1 {
@@ -222,8 +236,9 @@
 }
 
 .fourth h3 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: lighter;
+  padding-left: 5em;
 }
 
 .fifth {
@@ -247,6 +262,12 @@
   margin-left: 37.95rem;
   visibility: hidden;
   height: 100vh;
+  font-family: 'Playfair Display';
+}
+
+.fifth h1, .fifth h3 {
+  font-weight: lighter;
+  font-size: 0.75em;
 }
 
 .m {
@@ -309,6 +330,8 @@
 
 .show {
   visibility: visible;
+  -webkit-animation: sobe 1.5s;
+          animation: sobe 1.5s;
 }
 
 .navCor {
@@ -321,7 +344,6 @@ nav {
           align-items: center;
   font-size: 1.1rem;
   background-color: rgba(0, 0, 0, 0);
-  position: absolute;
   z-index: 2;
   width: 100%;
   height: 3em;
@@ -337,52 +359,64 @@ nav h2 {
   margin-left: 1rem;
 }
 
+@-webkit-keyframes sobe {
+  from {
+    margin-left: 200%;
+  }
+  to {
+    margin-left: 100;
+  }
+}
+
+@keyframes sobe {
+  from {
+    margin-left: 200%;
+  }
+  to {
+    margin-left: 100;
+  }
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 600px) {
   .home {
     width: 100vw;
+    height: 100vh;
   }
   /*nav{
         height: 14.2rem;
         background: linear-gradient(180deg, white 20%, $secondColor 30%, $thirdColor 55%, $fourthColor 77%, $fifthColor 90%)
     }*/
-  .nome {
-    margin-left: calc(4.6rem * 0.1);
-    top: 1em;
-    font-size: calc(155px * 0.8);
-    line-height: calc(70px * 0.76);
-    letter-spacing: calc(-0.13em * 1.1);
-  }
-  .conrado {
-    letter-spacing: calc(-0.177em * 1.1);
+  .title {
+    margin-left: 0.18em;
+    font-size: 5em;
+    line-height: 52px;
   }
   .sub {
     margin-left: calc(9.5rem * 0.15);
-    top: 10em;
+    margin-top: 3.1rem;
   }
   .sub h3 {
-    margin-top: 8.5em;
     margin-bottom: 0.5em;
-    font-weight: 300;
     font-size: 0.85em;
   }
   .sub h4 {
-    font-weight: 100;
     font-size: 0.8em;
   }
   .second {
     width: 100vw;
     margin-top: 3em;
     margin-left: 0;
-    padding: calc(9.33rem * 0.15);
+    padding: 0.95em;
     height: calc(100vh - 3em);
     overflow: hidden;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-family: 'Playfair Display';
   }
   .second h1 {
-    font-size: 3.5em;
+    font-size: 13.3vw;
     margin-top: 0.69em;
   }
   .conqs {
@@ -395,11 +429,11 @@ nav h2 {
             align-items: flex-start;
   }
   .item {
-    width: 10em;
+    width: 45vw;
     margin-bottom: calc(1em * 0.73);
-    padding: calc(2em * 0.4);
+    padding: 1em;
     height: 12.5em;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
   .third {
     height: calc(100vh - 6rem);
@@ -413,7 +447,7 @@ nav h2 {
             justify-content: center;
   }
   .third h1 {
-    font-size: 30px;
+    font-size: 9.45vw;
     font-weight: bold;
     letter-spacing: 0.28em;
   }
@@ -423,7 +457,7 @@ nav h2 {
     letter-spacing: 0;
   }
   .third ul {
-    margin: 0 0;
+    margin: 0.25em 1em;
     font-weight: 300;
     line-height: 1.5em;
     font-size: 1em;
@@ -443,7 +477,7 @@ nav h2 {
     margin-left: 0;
     margin-top: 9em;
     letter-spacing: 0.2em;
-    padding: 1.9em 1em 3em 2em;
+    padding: 1.9em 1em 3em 1em;
   }
   .fourth h1 {
     font-size: 40px;
@@ -457,11 +491,13 @@ nav h2 {
     height: calc(100vh - 12rem);
     margin-left: 0;
     margin-top: 12rem;
-    font-size: 0.5em;
+    font-size: 0.75em;
+    font-weight: normal;
   }
   .navCor h2 {
     margin-left: 0.7em;
     font-size: 1.3em;
+    font-weight: 400;
   }
   .navCor h2:hover {
     font-size: 1.3em;
@@ -482,23 +518,21 @@ nav h2 {
   .burguer {
     margin-top: 0.3rem;
   }
-}
-
-@media only screen and (max-width: 380px) {
-  .second h1 {
-    font-size: 3em;
+  @-webkit-keyframes sobe {
+    from {
+      margin-top: 200%;
+    }
+    to {
+      margin-top: 100;
+    }
   }
-  .item {
-    font-size: 0.9rem;
-  }
-}
-
-@media only screen and (max-width: 330px) {
-  .second h1 {
-    font-size: 2.65em;
-  }
-  .item {
-    font-size: 0.75rem;
+  @keyframes sobe {
+    from {
+      margin-top: 200%;
+    }
+    to {
+      margin-top: 100;
+    }
   }
 }
 /*# sourceMappingURL=main.css.map */
